@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+#nhlHeader{
+
+    font-family:'Tourney', cursive;
+    color: red;
+
+}
+
+#stockfriendHeader{
+
+    font-family: "Audiowide", sans-serif;
+    color: rgb(81, 243, 81);
+
+}
+
+.highlightedHead{
+
+    background-color: rgb(56, 45, 45);
+
+}
+
+.test{
+
+    color: aqua;
+}
+
+.white{
+
+    color: white;
+}
+
+#bodyColor{
+    background-color: rgb(179, 177, 177);
+}
+
+#projects{
+
+    position: relative;
+
+    left: 100px;
+}
+
+.projectName{
+
+    font-size: 30px;
+    color: green;
+
+}
+
+.project{
+    margin-bottom: 20px;
+}
+
+#notice{
+
+    position: relative;
+    left: 60%;
+}
