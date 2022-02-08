@@ -1,0 +1,425 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.formHeader {
+  top: 0;
+  width: 100%;
+  background-color: #389979;
+  min-height: 9vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 1vh;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+ul.nav {
+
+
+  grid-column: 5 / 11;
+  justify-self: center;
+  align-self: end;
+
+}
+ul.nav > li {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+ul.nav > li:hover {
+  background-color: #8f2525;
+}
+ul.nav > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+.gridContainer{
+
+  height: 100vh;
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+
+}
+
+
+
+
+
+#header{
+
+  font-size: 50px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  align-content: left;
+  margin-left: 5vw;
+  margin-top: 1vw;
+}
+
+
+.App-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #800020;
+
+  height: 18rem;
+
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+
+  color: white;
+}
+
+.pageHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #800020;
+  
+  height: 7rem;
+
+  display: grid;
+
+  grid-template-columns: repeat(13, 1fr);
+
+
+  color: white;
+}
+
+#contactInfoHome{
+
+  font-size: 1.3rem;
+  grid-column: 12/13;
+  grid-row: 1/2;
+  align-self: start;
+  text-align: right;
+  padding-right: 1.1rem;
+  font-family: serif;
+
+}
+
+.contactInfoPage{
+
+  font-size: 1.3rem;
+  grid-column: 13/14;
+  grid-row: 1/2;
+  padding-right: 1.1rem;
+  text-align: right;
+
+}
+
+
+#homepageHeaderMessage{
+
+
+  grid-column: 3/12;
+  grid-row: 1/3;
+  font-size: 2.9rem;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  font-family: serif;
+
+}
+
+#aboutMe{
+  font-size: 1.5rem;
+
+  grid-column: 12 / 13;
+  grid-row: 1/2;
+  text-align: right;
+  padding-right: 1.1rem;
+  padding-bottom: 0.2rem;
+
+  align-self: end;
+  font-family: serif;
+
+}
+
+
+#homepageLogo{
+
+  grid-column: 1 / 4;
+  grid-row: 1/2;
+  width: 18rem;
+  height: 18rem;
+  justify-self: center;
+
+}
+
+.pageLogo{
+
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
+
+  height: 7rem;
+  width: 7rem;
+
+  justify-self: center;
+
+}
+
+
+
+#emphasizedEnjoy{
+
+  font-size: 60px;
+  font-weight: 800;
+}
+
+#developmentMessage{
+
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#body{
+  margin-top: 35vh;
+}
+
+button{
+
+  width: 230px;
+  height: 400px;
+  font-weight: 600;
+  border-radius: 40%;
+
+}
+
+.button{
+
+  background-color: seagreen;
+}
+
+.altFont{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.submitButton{
+
+  width: 70px;
+  height: 40px;
+  border-radius: 0%;
+  position: relative !important;
+
+  float: right;
+  position: relative;
+  bottom: 0.8vh;
+  right: 0.6vw;
+
+}
+
+form{
+
+  grid-column: 4 / span 4;
+
+  grid-row: 10/15;
+  border-style: solid;
+  align-self: start;
+}
+
+.formSegment{
+  margin-top: 0.5vh;
+}
+
+.formSegmentContainer{
+
+  margin-left: 1vw;
+}
+
+#careMessage{
+
+
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  text-align: left;
+  font-family:serif;
+  color: rgb(90, 88, 88);
+
+}
+
+.image{
+
+  width: 18rem;
+  height: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 1vw;
+  
+  border-radius: 100%;
+
+}
+
+.column{
+
+justify-content: center;
+align-content: center;
+
+}
+
+input{
+
+
+  width: 12rem;
+  height: 2rem;
+  border-width: 1.5px;
+  border-style: solid;
+  margin-left: 5px !important;
+  margin-top: 3px !important;
+  font-size: larger;
+}
+
+#zip{
+
+  width: 5vw;
+}
+
+
+/* Form row titles */
+h2{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem !important; 
+  font-weight: 400 !important;
+
+
+}
+
+/* Page titles */
+h3{
+
+  font-size: 1.9rem !important;
+  font-weight: 700 !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.careObjectives{
+
+  padding-bottom: 5vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+
+  grid-column: 4 / 8;
+  grid-row: 4 / 8;
+}
+
+.careObjectivesList{
+
+  margin-left: 1vw;
+  margin-top: 1vh;
+}
+
+.careObjectivesList > li{
+
+  margin-top: 1vh;
+
+}
+
+#loginComponent{
+
+
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#formTable{
+
+
+  grid-column: 2 / 13;
+
+  grid-row: 3;
+
+
+}
+
+
+/* Portrait */
+@media (max-width: 800px) { 
+
+    #careMessage{
+
+
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 50px;
+      text-align: left;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: rgb(218, 71, 71);
+    
+    }
+
+    #emphasizedEnjoy{
+
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+  
+    #loginComponent{
+
+
+
+
+
+    }
+
+}
