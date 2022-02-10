@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.afaa346c.css",
-    "main.js": "/static/js/main.7dcaecc0.js",
+    "main.css": "/static/css/main.ffd7dbb6.css",
+    "main.js": "/static/js/main.31f8dd87.js",
     "static/js/787.5525534d.chunk.js": "/static/js/787.5525534d.chunk.js",
     "static/media/Elderly.jpg": "/static/media/Elderly.0c7cf232674a98991c7c.jpg",
     "static/media/Property.jpg": "/static/media/Property.4db751c79619f60fd6f8.jpg",
@@ -11,12 +11,12 @@
     "static/media/EnjoyHomeCareLogo3.png": "/static/media/EnjoyHomeCareLogo3.22e390216bba7efe9f1f.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.afaa346c.css.map": "/static/css/main.afaa346c.css.map",
-    "main.7dcaecc0.js.map": "/static/js/main.7dcaecc0.js.map",
+    "main.ffd7dbb6.css.map": "/static/css/main.ffd7dbb6.css.map",
+    "main.31f8dd87.js.map": "/static/js/main.31f8dd87.js.map",
     "787.5525534d.chunk.js.map": "/static/js/787.5525534d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afaa346c.css",
-    "static/js/main.7dcaecc0.js"
+    "static/css/main.ffd7dbb6.css",
+    "static/js/main.31f8dd87.js"
   ]
 }
