@@ -50,8 +50,7 @@ function SeniorCarePage(props) {
                     <li>Transportation services</li>
                     <li>Companionship</li>
                     <li>Assistance with exercise and therapy</li>
-                    <br></br>
-                    <li><i>*All care is given with extra attention and love</i></li>
+          
 
                 </ul>
 
