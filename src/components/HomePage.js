@@ -54,7 +54,7 @@ function Header() {
 
             <img src={Logo} id="homepageLogo" />
 
-            <u id="aboutMe">About Me</u>
+            <u id="aboutMe">About Us</u>
 
 
 
@@ -69,23 +69,21 @@ function HomePageBody() {
 
     return (
 
-        <div className="container">
+        <div id="bodyGridContainer">
 
             <p id="careMessage">How can we care for you?</p>
 
             {/* Each column contains a picture and corresponding link to different services */}
 
-            <div className="columns">
 
-                <HomePageOption linkDestination={"./senior-care"} picSource={Elderly} linkName={<p className="altFont">Senior Care</p>} />
+                <HomePageOption className="bodyRow1 bodyColumn1 bodyColumn1Landscape" linkDestination={"./senior-care"} picSource={Elderly} linkName={<p className="altFont">Senior Care</p>} />
 
-                <HomePageOption linkDestination={"./pet-care"} picSource={Pets} linkName={<p className="altFont">Pet Care</p>} />
+                <HomePageOption className="bodyRow1 bodyColumn2 bodyColumn2Landscape" linkDestination={"./pet-care"} picSource={Pets} linkName={<p className="altFont">Pet Care</p>} />
 
-                <HomePageOption linkDestination={"./odd-jobs"} picSource={Child} linkName={<p className="altFont">Odd Jobs</p>} />
+                <HomePageOption className="bodyRow2 bodyColumn1 bodyColumn3Landscape" linkDestination={"./odd-jobs"} picSource={Child} linkName={<p className="altFont">Odd Jobs</p>} />
 
-                <HomePageOption linkDestination={"./property-management"} picSource={Property} linkName={<p className="altFont">Property <br></br> Management</p>} />
+                <HomePageOption className="bodyRow2 bodyColumn2 bodyColumn4Landscape" linkDestination={"./property-management"} picSource={Property} linkName={<p className="altFont">Property <br></br> Management</p>} />
 
-            </div>
 
         </div>);
         
@@ -98,7 +96,7 @@ function HomePageOption(props) {
 
     return (
 
-        <div className="column">
+        <div className={props.className}>
             <img className="image" src={props.picSource} alt="elderly" />
             <Link to={props.linkDestination}><button className="button" style={{ "fontSize": "20px", "height": "100px" }}>{props.linkName}</button></Link>
 
