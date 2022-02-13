@@ -2,6 +2,7 @@
 import Form from './Form';
 import { Link } from 'react-router-dom';
 import Logo from "../EnjoyHomeCareLogo3.png";
+import DropDown from './DropDown';
 
 function OddJobsPage(props) {
 
@@ -15,6 +16,7 @@ function OddJobsPage(props) {
 
             <header className='pageHeader'>
 
+                <DropDown />
 
                 <ul className="nav">
                     <li><Link to={"../"}>Home</Link></li>

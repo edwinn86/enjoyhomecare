@@ -2,6 +2,7 @@
 import Form from './Form';
 import { Link } from 'react-router-dom';
 import Logo from "../EnjoyHomeCareLogo3.png";
+import DropDown from './DropDown';
 
 function PropertyManagementPage(props) {
 
@@ -15,6 +16,7 @@ function PropertyManagementPage(props) {
 
             <header className='pageHeader'>
 
+                <DropDown />
 
                 <ul className="nav">
                     <li><Link to={"../"}>Home</Link></li>
@@ -46,7 +48,8 @@ function PropertyManagementPage(props) {
                 <h3>Our property management services include:</h3>
 
                 <ul className="careObjectivesList">
-                    <li>Rental leases, showings, follow-ups</li>
+                    <li>Rental leases</li>
+                    <li>Showings and follow-ups</li>
                     <li>Point of contact for tenant issues</li>
                     <li>Scheduling groundskeeping and updates</li>
 

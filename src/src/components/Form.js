@@ -16,14 +16,13 @@ function Form(props) {
 
     console.log(formValues);
 
-
-
+   
 
     return (
 
 
 
-        <form>
+        <form id="testID">
 
             <header className="formHeader">Request Our Care Services</header>
 
@@ -37,8 +36,8 @@ function Form(props) {
                     <label>
                         <h2>Name</h2>
                     </label>
-                    <input name="first" placeholder="First" type="text" value={formValues.first} onChange={handleChange}></input>
-                    <input name="last" placeholder="Last" type="text" value={formValues.last} onChange={handleChange}></input>
+                    <input className = "inputs" name="first" placeholder="First" type="text" value={formValues.first} onChange={handleChange}></input>
+                    <input className = "inputs" name="last" placeholder="Last" type="text" value={formValues.last} onChange={handleChange}></input>
 
                 </div>
 
@@ -48,9 +47,9 @@ function Form(props) {
                         <h2> Address </h2>
                     </label>
 
-                    <input name="street" placeholder="Street" type="text" value={formValues.street} onChange={handleChange}></input>
-                    <input name="city" placeholder="City" type="text" value={formValues.city} onChange={handleChange}></input>
-                    <input id="zip" name="ZIP" placeholder="ZIP" type="text" value={formValues.ZIP} onChange={handleChange}></input>
+                    <input className = "inputs" name="street" placeholder="Street" type="text" value={formValues.street} onChange={handleChange}></input>
+                    <input className = "inputs" name="city" placeholder="City" type="text" value={formValues.city} onChange={handleChange}></input>
+                    <input className = "inputs" id="zip" name="ZIP" placeholder="ZIP" type="text" value={formValues.ZIP} onChange={handleChange}></input>
                 </div>
 
 
@@ -60,14 +59,16 @@ function Form(props) {
                         <h2> Contact Information </h2>
                     </label>
 
-                    <input name="phone" placeholder="Phone" type="text" value={formValues.phone} onChange={handleChange}></input>
-                    <input name="email" placeholder="Email" type="text" value={formValues.email} onChange={handleChange}></input>
+                    <input className = "inputs" name="phone" placeholder="Phone" type="text" value={formValues.phone} onChange={handleChange}></input>
+                    <input className = "inputs"  name="email" placeholder="Email" type="text" value={formValues.email} onChange={handleChange}></input>
 
                 </div>
 
+                <button id="submitButton" type="button" onClick={() => {submitForm(formValues, props.typeOfCare)}}>Submit</button>
+
             </div>
 
-            <button className="submitButton" type="button" onClick={() => {submitForm(formValues, props.typeOfCare)}}>Submit</button>
+           
 
         </form>
 

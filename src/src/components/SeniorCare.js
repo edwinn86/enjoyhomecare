@@ -1,11 +1,18 @@
 import Form from './Form';
 import { Link } from 'react-router-dom';
 import Logo from "../EnjoyHomeCareLogo3.png";
+import { useEffect } from 'react';
+import DropDown from './DropDown';
 
 function SeniorCarePage(props) {
 
     const service = props.typeOfCare;
 
+
+
+    
+
+    
 
     return (
 
@@ -13,6 +20,8 @@ function SeniorCarePage(props) {
 
 
             <header className='pageHeader'>
+
+                <DropDown />
 
 
                 <ul className="nav">

@@ -3,7 +3,7 @@ import './App.css';
 import 'bulma/css/bulma.min.css';
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
