@@ -1,19 +1,27 @@
 import Form from './Form';
 import { Link } from 'react-router-dom';
-import Logo from "../EnjoyHomeCareLogo3.png";
+import Logo from "../images/EnjoyHomeCareLogo3.png";
+import { useEffect } from 'react';
+import DropDown from './DropDown';
+import seniorCare from "../images/SeniorCare.jpg";
 
 function SeniorCarePage(props) {
 
     const service = props.typeOfCare;
 
 
+
+
+
+
+
     return (
 
-        <div className='gridContainer'>
-
+        <div className='pageDiv'>
 
             <header className='pageHeader'>
 
+                <DropDown />
 
                 <ul className="nav">
                     <li><Link to={"../"}>Home</Link></li>
@@ -35,34 +43,34 @@ function SeniorCarePage(props) {
 
             </header>
 
+            <div className='gridContainer'>
+
+                <img src={seniorCare} className="pageImage"></img>
 
 
 
+                <div className="careObjectives">
+
+                    <h3>Our senior care services include:</h3>
+
+                    <ul className="careObjectivesList">
+                        <li>Assistance with bathing, cleaning, and personal care</li>
+                        <li>Meal prep and routine housekeeping </li>
+                        <li>Transportation services</li>
+                        <li>Companionship</li>
+                        <li>Assistance with exercise and therapy</li>
 
 
-            <div className="careObjectives">
+                    </ul>
 
-                <h3>Our senior care services include:</h3>
 
-                <ul className="careObjectivesList">
-                    <li>Assistance with bathing, cleaning, and personal care</li>
-                    <li>Meal prep and routine housekeeping </li>
-                    <li>Transportation services</li>
-                    <li>Companionship</li>
-                    <li>Assistance with exercise and therapy</li>
-                    <br></br>
-                    <li><i>*All care is given with extra attention and love</i></li>
+                </div>
 
-                </ul>
+                <Form typeOfCare={props.typeOfCare} />
 
 
             </div>
-
-            <Form typeOfCare = {props.typeOfCare}/>
-
-
         </div>
-
 
 
     );

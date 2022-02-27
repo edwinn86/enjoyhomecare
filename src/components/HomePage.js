@@ -5,11 +5,11 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import Elderly from "../Elderly.jpg";
-import Pets from "../Pets.jpg";
-import Property from "../Property.jpg";
-import Child from "../Child.jpg";
-import Logo from "../EnjoyHomeCareLogo3.png";
+import Elderly from "../images/Elderly.jpg";
+import Pets from "../images/Pets.jpg";
+import Property from "../images/Property.jpg";
+import OddJobs from "../images/Paperwork.jpg";
+import Logo from "../images/EnjoyHomeCareLogo3.png";
 
 function HomePage() {
 
@@ -20,7 +20,7 @@ function HomePage() {
 
             {/* Header to the webpage with the logo, slogan, and contact information */}
 
-            <div id="body">
+            <div id="pageBody">
 
                 <Header />
 
@@ -80,7 +80,7 @@ function HomePageBody() {
 
                 <HomePageOption className="bodyRow1 bodyColumn2 bodyColumn2Landscape" linkDestination={"./pet-care"} picSource={Pets} linkName={<p className="altFont">Pet Care</p>} />
 
-                <HomePageOption className="bodyRow2 bodyColumn1 bodyColumn3Landscape" linkDestination={"./odd-jobs"} picSource={Child} linkName={<p className="altFont">Odd Jobs</p>} />
+                <HomePageOption className="bodyRow2 bodyColumn1 bodyColumn3Landscape" linkDestination={"./odd-jobs"} picSource={OddJobs} linkName={<p className="altFont">Odd Jobs</p>} />
 
                 <HomePageOption className="bodyRow2 bodyColumn2 bodyColumn4Landscape" linkDestination={"./property-management"} picSource={Property} linkName={<p className="altFont">Property <br></br> Management</p>} />
 

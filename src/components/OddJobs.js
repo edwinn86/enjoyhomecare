@@ -1,7 +1,9 @@
 
 import Form from './Form';
 import { Link } from 'react-router-dom';
-import Logo from "../EnjoyHomeCareLogo3.png";
+import Logo from "../images/EnjoyHomeCareLogo3.png";
+import DropDown from './DropDown';
+import oddJobs from "../images/OddJobs.jpg";
 
 function OddJobsPage(props) {
 
@@ -10,11 +12,11 @@ function OddJobsPage(props) {
 
     return (
 
-        <div className='gridContainer'>
-
+        <div className='pageDiv'>
 
             <header className='pageHeader'>
 
+                <DropDown />
 
                 <ul className="nav">
                     <li><Link to={"../"}>Home</Link></li>
@@ -36,32 +38,39 @@ function OddJobsPage(props) {
 
             </header>
 
+            <div className='gridContainer'>
+
+
+
+                <img src={oddJobs} className="pageImage"></img>
 
 
 
 
 
-            <div className="careObjectives">
 
-                <h3>Our odd job care services include:</h3>
+                <div className="careObjectives">
 
-                <ul className="careObjectivesList">
-                    <li>Grocery Shopping</li>
-                    <li>Prescription pickup</li>
-                    <li>Office assistance</li>
-                    <li>Taxi services</li>
-                    <li>And more!</li>
+                    <h3>Our odd job care services include:</h3>
 
-                </ul>
+                    <ul className="careObjectivesList">
+                        <li>Grocery Shopping</li>
+                        <li>Prescription pickup</li>
+                        <li>Office assistance</li>
+                        <li>Taxi services</li>
+                        <li>And more!</li>
+
+                    </ul>
+
+
+                </div>
+
+                <Form typeOfCare={props.typeOfCare} />
 
 
             </div>
 
-            <Form typeOfCare = {props.typeOfCare}/>
-
-
         </div>
-
 
 
     );
