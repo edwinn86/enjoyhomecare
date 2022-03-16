@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import dropDownWhite from '../DropdownWhite.png';
+import dropDownWhite from '../images/DropdownWhite.png';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 

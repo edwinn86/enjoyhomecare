@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f050bd42.css",
-    "main.js": "/static/js/main.a2c4277d.js",
+    "main.js": "/static/js/main.d0d9e7cd.js",
     "static/js/787.5525534d.chunk.js": "/static/js/787.5525534d.chunk.js",
     "static/media/PropertyManagement.jpg": "/static/media/PropertyManagement.04f21fc05f0c04a5036a.jpg",
     "static/media/PetCareDogs.jpg": "/static/media/PetCareDogs.b2c2eda2c351d5b05720.jpg",
@@ -16,11 +16,11 @@
     "static/media/DropdownWhite.png": "/static/media/DropdownWhite.9edfd30de83ab8492410.png",
     "index.html": "/index.html",
     "main.f050bd42.css.map": "/static/css/main.f050bd42.css.map",
-    "main.a2c4277d.js.map": "/static/js/main.a2c4277d.js.map",
+    "main.d0d9e7cd.js.map": "/static/js/main.d0d9e7cd.js.map",
     "787.5525534d.chunk.js.map": "/static/js/787.5525534d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f050bd42.css",
-    "static/js/main.a2c4277d.js"
+    "static/js/main.d0d9e7cd.js"
   ]
 }

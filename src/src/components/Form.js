@@ -4,8 +4,11 @@ function Form(props) {
 
     const date = new Date();
 
+    // Creates formValues, and then upon change modify respective values 
 
     const [formValues, setFormValues] = useState({ first: "", last: "", street: "", city: "", ZIP: "", phone: "", email: "", typeOfCare: props.typeOfCare, date: `${date.getMonth()+1}/${date.getDate()}/${date.getFullYear()}`});
+    
+    // Callback for input onChange events
     const handleChange = e => {
         const { name, value } = e.target;
         setFormValues(prevState => ({
@@ -14,7 +17,8 @@ function Form(props) {
         }));
     };
 
-    console.log(formValues);
+    // Error message upon form submission
+    const [error, setError] = useState("");
 
    
 
@@ -64,11 +68,11 @@ function Form(props) {
 
                 </div>
 
-                <button id="submitButton" type="button" onClick={() => {submitForm(formValues, props.typeOfCare)}}>Submit</button>
+                <button id="submitButton" type="button" onClick={() => {submitForm(formValues, setError)}}>Submit</button>
 
             </div>
 
-           
+            <ErrorMessage error = {error} setError = {setError}/>
 
         </form>
 
@@ -78,27 +82,43 @@ function Form(props) {
 
 }
 
+// Sets error message if a user attempts to submit a form with missing information
 
-function submitForm(formValues){
+function ErrorMessage(props){
+
+    if(props.error === ""){
+
+       return null;
+
+    }
+
+    setTimeout(() => {
+
+        props.setError("");
+
+    }, 2000);
+
+    return (<p id="formError">Please fill out the required fields *</p>);
+}
+
+
+// Checks for errors, then submits form values to backend for database assimilation
+
+function submitForm(formValues, setError){
 
     
+    // .trim() checks to see if any values are empty
 
     
-    if(formValues.first.trim() === ""){
+    if(formValues.first.trim() === "" || formValues.last.trim() === "" || (formValues.phone.trim() === "" && formValues.email.trim() === "")){
 
-        console.log("First name is required");
-        
-    } else if (formValues.last.trim() === ""){
+        setError("Error");
 
-        console.log("First name is required");
-
-    } else if (formValues.phone.trim() === "" && formValues.email.trim() === ""){
-
-        console.log("Phone number or email is reqiured");
     }
     
+    
 
-    fetch("http://localhost:3000/Forms", {
+    fetch("https://apiamz.enjoyhomecare.com/Forms", {
 
         method: "POST",
         headers: {'Content-type': 'application/json'},
@@ -109,18 +129,12 @@ function submitForm(formValues){
 
 
 
-            console.log(result)
+            console.log(result);
         }
         
 
         )
         
-
-
-    
-        
-
-
 
 }
 

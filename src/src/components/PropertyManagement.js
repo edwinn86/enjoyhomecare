@@ -1,68 +1,52 @@
 
 import Form from './Form';
 import { Link } from 'react-router-dom';
-import Logo from "../EnjoyHomeCareLogo3.png";
+import Logo from "../images/EnjoyHomeCareLogo3.png";
 import DropDown from './DropDown';
+import propertyManagement from "../images/PropertyManagement.jpg";
+import PageHeader from './PageHeader';
 
 function PropertyManagementPage(props) {
 
-    const service = props.typeOfCare;
 
 
     return (
 
-        <div className='gridContainer'>
+        <div className='pageDiv'>
+
+            <PageHeader />
+
+            <div className='gridContainer'>
 
 
-            <header className='pageHeader'>
 
-                <DropDown />
 
-                <ul className="nav">
-                    <li><Link to={"../"}>Home</Link></li>
-                    <li><Link to={"../senior-care"}>Senior Care</Link></li>
-                    <li><Link to={"../pet-care"}>Pet Care</Link></li>
-                    <li><Link to={"../odd-jobs"}>Odd Jobs</Link></li>
-                    <li><Link to={"../property-management"}>Property Management</Link></li>
+                <img src={propertyManagement} className="pageImage"></img>
 
-                </ul>
 
-                <div className="contactInfoPage">
-                    <p>enjoyhomecare@gmail.com</p>
-                    <p>336-552-4353</p>
+
+
+                <div className="careObjectives">
+
+                    <h3>Our property management services include:</h3>
+
+                    <ul className="careObjectivesList">
+                        <li>Rental leases</li>
+                        <li>Showings and follow-ups</li>
+                        <li>Point of contact for tenant issues</li>
+                        <li>Scheduling groundskeeping and updates</li>
+
+                    </ul>
+
 
                 </div>
 
-                <img src={Logo} className="pageLogo" />
-
-
-            </header>
-
-
-
-
-
-
-            <div className="careObjectives">
-
-                <h3>Our property management services include:</h3>
-
-                <ul className="careObjectivesList">
-                    <li>Rental leases</li>
-                    <li>Showings and follow-ups</li>
-                    <li>Point of contact for tenant issues</li>
-                    <li>Scheduling groundskeeping and updates</li>
-
-                </ul>
+                <Form typeOfCare={props.typeOfCare} />
 
 
             </div>
 
-            <Form typeOfCare = {props.typeOfCare}/>
-
-
         </div>
-
 
 
     );

@@ -26,7 +26,7 @@
 
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) and (max-width:900px) {
+@media only screen and (min-width : 110px) and (max-width:1100px) {
 
 
   .App{
@@ -521,13 +521,46 @@
   
   }
 
+  #formTable {
+  
+  
+    grid-column: 2 / 12;
+  
+    grid-row: 1 / 12;
+
+    border-style: solid;
+  
+
+  
+  }
+
+  #formTable > tr, th, td{
+
+    border: solid;
+    
+  }
+
+  #formTable > thead > tr > th{
+
+    background-color: #389979 !important;
+    text-align: center;
+    font-weight: 800;
+    justify-self: center;
+
+  }
+
+  #formTable > tbody > tr > td{
+
+    text-align: center;
+  }
+
  
 }
 
 
 /* For landscape mode, change the form layout, and move the dropdown in the page header */
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 450px) and (max-width : 900px) {
+@media only screen and (min-width : 450px) and (max-width : 1100px) {
 
 
   form {
@@ -616,6 +649,39 @@
     margin-top: 2vh;
   
   }
+
+  #formTable {
+  
+  
+    grid-column: 2 / 12;
+  
+    grid-row: 1 / 12;
+
+    border-style: solid;
+  
+
+  
+  }
+
+  #formTable > tr, th, td{
+
+    border: solid;
+    
+  }
+
+  #formTable > thead > tr > th{
+
+    background-color: #389979 !important;
+    text-align: center;
+    font-weight: 800;
+    justify-self: center;
+
+  }
+
+  #formTable > tbody > tr > td{
+
+    text-align: center;;
+  }
   
   
 
@@ -625,7 +691,7 @@
 @media only screen and (min-width : 768px) {}
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1101px) {
 
   * {
     box-sizing: border-box;
@@ -915,16 +981,42 @@
   
     height: 100%;
     display: grid;
+    width: 120rem;
+    height: 65rem;
+    z-index: -5;
   
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 12rem repeat(16, 1fr);
+    position: absolute;
+
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+  
+  }
+
+  .gridContainerManagement {
+  
+
+    display: grid;
+    width: 90%;
+
+    z-index: -5;
+  
+    grid-template-columns: repeat(12, 1fr);
+
+    position: absolute;
+
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
   
   }
   
   
   form {
   
-    grid-column: 4 / span 8;
+    grid-column: 3 / span 8;
 
     width: 40rem;
   
@@ -1006,7 +1098,7 @@
   
     font-size: 1.5rem;
   
-    grid-column: 4 / 13;
+    grid-column: 3 / 13;
     grid-row: 2 / 9;
   }
   
@@ -1038,11 +1130,39 @@
   #formTable {
   
   
-    grid-column: 2 / 13;
+    grid-column: 2 / 12;
   
-    grid-row: 3;
+    grid-row: 1 / 12;
+
+    border-style: solid;
   
+
   
+  }
+
+  #formTable > tr, th, td{
+
+    border: solid;
+    
+  }
+
+  #formTable > thead > tr > th{
+
+    background-color: #389979 !important;
+    text-align: center;
+    height: 4rem;
+    font-size: large;
+    font-weight: 800;
+    justify-self: center;
+
+  }
+
+  #formTable > tbody > tr > td{
+
+    text-align: center;
+    font-size: large;
+    height: 3rem;
+
   }
 
   .projectContainer{
@@ -1050,6 +1170,52 @@
     display: none;
   }
   
+  #formError{
+
+    position: relative;
+
+    left: 42rem;
+    top: 0.5rem;
+    font-size: large;
+  }
+
+  .pageImage {
+
+    grid-column: 8 / 13;
+
+    grid-row: 4 / 12;
+
+    width: 37rem;
+    height: 25rem;
+
+    border: solid;
+    border-radius: 2%;
+    border-width: 0.5rem;
+    border-color: #800020;
+  }
+
+ .pageDiv{
+
+  z-index: -5;
+ }
+
+ #petCarePagePictureTwo{
+
+  grid-column: 1/4;
+  grid-row: 9/11;
+  width: 15rem;
+  height: 10rem;
+  background-color: #389979;
+  justify-self: center;
+ 
+ }
+
+ .formSortButton{
+
+  width: 0.5rem;
+  height: 1rem;
+ }
+ 
 
 }
 
