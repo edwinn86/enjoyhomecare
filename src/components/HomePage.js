@@ -5,10 +5,10 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import Elderly from "../images/Elderly.jpg";
-import Pets from "../images/Pets.jpg";
-import Property from "../images/Property.jpg";
-import OddJobs from "../images/Paperwork.jpg";
+import Elderly from "../images/ElderlyResized.jpg";
+import Pets from "../images/PetsResized.jpg";
+import Property from "../images/PropertyResized.jpg";
+import OddJobs from "../images/PaperworkResized.jpg";
 import Logo from "../images/EnjoyHomeCareLogo3.png";
 
 function HomePage() {
@@ -18,7 +18,6 @@ function HomePage() {
 
         <div className="App">
 
-            {/* Header to the webpage with the logo, slogan, and contact information */}
 
             <div id="pageBody">
 
@@ -32,30 +31,27 @@ function HomePage() {
 
 }
 
+// Header to the webpage with the logo, slogan, and contact information 
+
 function Header() {
 
     return (
 
         <header className="App-header">
 
-            {/*}
-            <h1 id="header">
-                <p><i id="emphasizedEnjoy">Enjoy</i> Home Care</p>
-            </h1>
-            <p style={{ "fontSize": "30px", "marginTop": "15px", "textAlign": "left", "marginLeft": "5vw" }}><i>Care that you can trust</i></p>
-
-            */}
-
             <div id="contactInfoHome">
                 <p>enjoyhomecare@gmail.com</p>
-                <p>336-552-4353</p>
+                <p>336-549-7143</p>
 
             </div>
 
             <img src={Logo} id="homepageLogo" />
 
+            {/*}
+            
             <u id="aboutMe">About Us</u>
 
+            */}
 
 
         </header>
@@ -65,6 +61,9 @@ function Header() {
 
 }
 
+
+// Body contains gtid layout, and a picture+link for each page
+
 function HomePageBody() {
 
     return (
@@ -73,22 +72,24 @@ function HomePageBody() {
 
             <p id="careMessage">How can we care for you?</p>
 
-            {/* Each column contains a picture and corresponding link to different services */}
 
 
-                <HomePageOption className="bodyRow1 bodyColumn1 bodyColumn1Landscape" linkDestination={"./senior-care"} picSource={Elderly} linkName={<p className="altFont">Senior Care</p>} />
 
-                <HomePageOption className="bodyRow1 bodyColumn2 bodyColumn2Landscape" linkDestination={"./pet-care"} picSource={Pets} linkName={<p className="altFont">Pet Care</p>} />
+            <HomePageOption className="bodyRow1 bodyColumn1 bodyColumn1Landscape" linkDestination={"./senior-care"} picSource={Elderly} linkName={<p className="altFont">Senior Care</p>} />
 
-                <HomePageOption className="bodyRow2 bodyColumn1 bodyColumn3Landscape" linkDestination={"./odd-jobs"} picSource={OddJobs} linkName={<p className="altFont">Odd Jobs</p>} />
+            <HomePageOption className="bodyRow1 bodyColumn2 bodyColumn2Landscape" linkDestination={"./pet-care"} picSource={Pets} linkName={<p className="altFont">Pet Care</p>} />
 
-                <HomePageOption className="bodyRow2 bodyColumn2 bodyColumn4Landscape" linkDestination={"./property-management"} picSource={Property} linkName={<p className="altFont">Property <br></br> Management</p>} />
+            <HomePageOption className="bodyRow2 bodyColumn1 bodyColumn3Landscape" linkDestination={"./odd-jobs"} picSource={OddJobs} linkName={<p className="altFont">Odd Jobs</p>} />
+
+            <HomePageOption className="bodyRow2 bodyColumn2 bodyColumn4Landscape" linkDestination={"./property-management"} picSource={Property} linkName={<p className="altFont">Property <br></br> Management</p>} />
 
 
         </div>);
-        
+
 
 }
+
+//props supply class for grid layout location, picture, link destination
 
 function HomePageOption(props) {
 

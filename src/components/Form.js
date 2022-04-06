@@ -4,9 +4,11 @@ function Form(props) {
 
     const date = new Date();
 
-    /*Creates formValues, and then upon change modify respective values */
+    // Creates formValues, and then upon change modify respective values 
 
     const [formValues, setFormValues] = useState({ first: "", last: "", street: "", city: "", ZIP: "", phone: "", email: "", typeOfCare: props.typeOfCare, date: `${date.getMonth()+1}/${date.getDate()}/${date.getFullYear()}`});
+    
+    // Callback for input onChange events
     const handleChange = e => {
         const { name, value } = e.target;
         setFormValues(prevState => ({
@@ -15,9 +17,8 @@ function Form(props) {
         }));
     };
 
+    // Error message upon form submission
     const [error, setError] = useState("");
-
-    console.log(formValues);
 
    
 
@@ -81,7 +82,7 @@ function Form(props) {
 
 }
 
-/* Sets error message if a user attempts to submit a form with missing information */
+// Sets error message if a user attempts to submit a form with missing information
 
 function ErrorMessage(props){
 
@@ -89,7 +90,11 @@ function ErrorMessage(props){
 
        return null;
 
+    } else if (props.error === "Success!"){
+
+        return (<p id="formError">Success! We will contact you soon.</p>);
     }
+    
 
     setTimeout(() => {
 
@@ -101,17 +106,19 @@ function ErrorMessage(props){
 }
 
 
-/* Checks for errors, then submits form values to backend for database assimilation */
+// Checks for errors, then submits form values to backend for database assimilation
 
 function submitForm(formValues, setError){
 
     
+    // .trim() checks to see if any values are empty
 
     
     if(formValues.first.trim() === "" || formValues.last.trim() === "" || (formValues.phone.trim() === "" && formValues.email.trim() === "")){
 
         setError("Error");
 
+        return;
     }
     
     
@@ -125,21 +132,14 @@ function submitForm(formValues, setError){
         .then(res=>res.json())
         .then((result) => {
 
+            setError("Success!");
 
-
-            console.log(result)
+        
         }
         
 
         )
         
-    
-
-
-    
-        
-
-
 
 }
 

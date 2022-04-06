@@ -604,16 +604,6 @@
     
   }
 
-  .gridContainer {
-  
-    height: 100%;
-    display: grid;
-  
-    grid-template-columns: repeat(18, 1fr);
-    grid-template-rows: 8rem repeat(10, 1fr);
-
-  }
-  
   
   /* Page titles */
   h3 {
@@ -979,10 +969,10 @@
 
   .gridContainer {
   
-    height: 100%;
+
     display: grid;
     width: 120rem;
-    height: 65rem;
+    height: 70rem;
     z-index: -5;
   
     grid-template-columns: repeat(12, 1fr);
@@ -1019,7 +1009,6 @@
     grid-column: 3 / span 8;
 
     width: 40rem;
-  
     grid-row: 9/16;
     border-style: solid;
     border-width: 1px;
@@ -1188,10 +1177,9 @@
     width: 37rem;
     height: 25rem;
 
-    border: solid;
-    border-radius: 2%;
-    border-width: 0.5rem;
-    border-color: #800020;
+
+    border-radius: 20%;
+
   }
 
  .pageDiv{

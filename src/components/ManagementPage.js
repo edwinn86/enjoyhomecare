@@ -10,9 +10,7 @@ function ManagementPage() {
     const [password, updatePassword] = useState('');
     const [forms, updateForms] = useState([]);
 
-    console.log(forms);
-
-
+    
     if (!(sessionStorage.getItem('login') === 'true')) {
 
         return (
@@ -77,6 +75,7 @@ function ManagementPage() {
                 body: JSON.stringify({ username: username, password: password })
             }
         ).then((res) => {
+
             if (res.status === 404) {
                 console.log("Incorrect login");
                 return;
@@ -116,7 +115,7 @@ function ManagementPage() {
 
 function FormTable(props) {
 
-    console.log('in');
+    //Fetch forms if they have not been
 
     if (props.forms.length === 0) {
 
@@ -182,9 +181,6 @@ function FormTable(props) {
                     </tr>
 
                 ))}
-
-
-
 
 
             </tbody>

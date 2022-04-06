@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.d464992b.css",
-    "main.js": "/static/js/main.bffc386b.js",
+    "main.js": "/static/js/main.125e9ffe.js",
     "static/js/787.5525534d.chunk.js": "/static/js/787.5525534d.chunk.js",
-    "static/media/PropertyManagement.jpg": "/static/media/PropertyManagement.04f21fc05f0c04a5036a.jpg",
-    "static/media/PetCareDogs.jpg": "/static/media/PetCareDogs.b2c2eda2c351d5b05720.jpg",
-    "static/media/Elderly.jpg": "/static/media/Elderly.0c7cf232674a98991c7c.jpg",
-    "static/media/Paperwork.jpg": "/static/media/Paperwork.1619c5ff8bd6e6712bbc.jpg",
-    "static/media/SeniorCare.jpg": "/static/media/SeniorCare.fe90336776a389d07a84.jpg",
-    "static/media/Property.jpg": "/static/media/Property.4db751c79619f60fd6f8.jpg",
-    "static/media/Pets.jpg": "/static/media/Pets.c342d03c6f7b50b0ae97.jpg",
-    "static/media/OddJobs.jpg": "/static/media/OddJobs.f9038a93c8d1da8aa9a6.jpg",
+    "static/media/PropertyManagementResized.jpg": "/static/media/PropertyManagementResized.014729fb02f7d57ecded.jpg",
+    "static/media/PetCareDogsResized.jpg": "/static/media/PetCareDogsResized.4fa59afc5ae187561d04.jpg",
+    "static/media/SeniorCareResized.jpg": "/static/media/SeniorCareResized.ff985e32cf828c28c349.jpg",
     "static/media/Agrandir-Regular.otf": "/static/media/Agrandir-Regular.ee9ba17d94a4b7dee02f.otf",
+    "static/media/OddJobsResized.jpg": "/static/media/OddJobsResized.cd553878ce0e93f3eb20.jpg",
+    "static/media/PetsResized.jpg": "/static/media/PetsResized.00f1e264e559638907fa.jpg",
+    "static/media/ElderlyResized.jpg": "/static/media/ElderlyResized.f3f80c223a8717ba5da8.jpg",
+    "static/media/PropertyResized.jpg": "/static/media/PropertyResized.f26fa928324709944297.jpg",
     "static/media/EnjoyHomeCareLogo3.png": "/static/media/EnjoyHomeCareLogo3.22e390216bba7efe9f1f.png",
+    "static/media/PaperworkResized.jpg": "/static/media/PaperworkResized.b8e40400b6e27cc78519.jpg",
     "static/media/DropdownWhite.png": "/static/media/DropdownWhite.9edfd30de83ab8492410.png",
     "index.html": "/index.html",
     "main.d464992b.css.map": "/static/css/main.d464992b.css.map",
-    "main.bffc386b.js.map": "/static/js/main.bffc386b.js.map",
+    "main.125e9ffe.js.map": "/static/js/main.125e9ffe.js.map",
     "787.5525534d.chunk.js.map": "/static/js/787.5525534d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d464992b.css",
-    "static/js/main.bffc386b.js"
+    "static/js/main.125e9ffe.js"
   ]
 }
