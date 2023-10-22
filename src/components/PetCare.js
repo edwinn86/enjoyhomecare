@@ -9,8 +9,6 @@ import PageHeader from './PageHeader';
 function PetCarePage(props) {
 
 
-    console.log(props.typeOfCare)
-
 
     return (
         <div className='pageDiv'>
@@ -18,7 +16,6 @@ function PetCarePage(props) {
 
 
             <div className='gridContainer'>
-
 
 
 
@@ -41,7 +38,7 @@ function PetCarePage(props) {
 
                 </div>
 
-                <Form typeOfCare={props.typeOfCare} />
+                {/* <Form typeOfCare={props.typeOfCare} /> */}
 
 
             </div>

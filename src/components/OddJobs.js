@@ -42,7 +42,7 @@ function OddJobsPage(props) {
 
                 </div>
 
-                <Form typeOfCare={props.typeOfCare} />
+                {/*  <Form typeOfCare={props.typeOfCare} />  */}
 
 
             </div>
