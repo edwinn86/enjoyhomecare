@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d464992b.css",
-    "main.js": "/static/js/main.45e63893.js",
+    "main.css": "/static/css/main.3beb7e73.css",
+    "main.js": "/static/js/main.165f8728.js",
     "static/js/787.5525534d.chunk.js": "/static/js/787.5525534d.chunk.js",
     "static/media/PropertyManagementResized.jpg": "/static/media/PropertyManagementResized.014729fb02f7d57ecded.jpg",
     "static/media/PetCareDogsResized.jpg": "/static/media/PetCareDogsResized.4fa59afc5ae187561d04.jpg",
@@ -15,12 +15,12 @@
     "static/media/PaperworkResized.jpg": "/static/media/PaperworkResized.b8e40400b6e27cc78519.jpg",
     "static/media/DropdownWhite.png": "/static/media/DropdownWhite.9edfd30de83ab8492410.png",
     "index.html": "/index.html",
-    "main.d464992b.css.map": "/static/css/main.d464992b.css.map",
-    "main.45e63893.js.map": "/static/js/main.45e63893.js.map",
+    "main.3beb7e73.css.map": "/static/css/main.3beb7e73.css.map",
+    "main.165f8728.js.map": "/static/js/main.165f8728.js.map",
     "787.5525534d.chunk.js.map": "/static/js/787.5525534d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d464992b.css",
-    "static/js/main.45e63893.js"
+    "static/css/main.3beb7e73.css",
+    "static/js/main.165f8728.js"
   ]
 }
